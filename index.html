@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Economica Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet"> 
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Economica&family=Signika:wght@400;700&display=swap"
+            rel="stylesheet">
     <!-- jquery link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
-    integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <!-- bootstrap link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css"
-    integrity="sha512-Xj2sd25G+JgJYwo0cvlGWXoUekbLg5WvW+VbItCMdXrDoZRWcS/d40ieFHu77vP0dF5PK+cX6TIp+DsPfZomhw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- bootstrap link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css"
+        integrity="sha512-Xj2sd25G+JgJYwo0cvlGWXoUekbLg5WvW+VbItCMdXrDoZRWcS/d40ieFHu77vP0dF5PK+cX6TIp+DsPfZomhw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- icon for mobile navbar -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- custom css file -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     
+    <!-- tab title and favicon -->
     <title>EO Career Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/faviconInitials.png" />
 </head>
 <body>
-    <header id="home" class="topNav">
+    <header id="home" class="vw-100 topNav">
         <img href="#home" id="eoIcon" src="./assets/img/faviconInitials.png" alt="EO Icon">
         <a href="#home" class="active">Erik E. Oerke Portfolio </a>
         <nav>
             <div id="navLinks">
                 <a href="#home">HOME</a>
                 <a href="#portfolio">PORTFOLIO</a>
-                <a href="about">ABOUT</a>
-                <a href="contact">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
             </div>
             <a href="javascript:void(0);" id="navIcon" class="icon">
                 <i class="fa fa-bars"></i>
@@ -43,7 +45,66 @@
     </header>
     
     <main class="container-fluid">
+        <section class="row my-1 portfolio justify-content-center">
+            <h1>Portfolio of Work</h1>
+            <div class="container-fluid row justify-content-around col-12">
+                    <div class="card col-12 col-lg-5 p-3 m-1" style="width: 18rem;">
+                        <a href="https://www.teamrexgames.com" target="_blank"><img class="card-img-top col-12"  src="./assets/img/VaultSite.PNG" alt="a Screenshot of the Team Rex Games' Vault RPG Website homepage"></a>
+                        <div class="card-body">
+                            <h3 class="card-title">Team Rex Games, Vault RPG website</h3>
+                            <p class="card-text">A site created using the Squarespace application</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 p-3 m-1" style="width: 18rem;">
+                        <a href="https://eeoerkeedu.github.io/Live-Weather-Dashboard/" target="_blank"><img class="card-img-top col-11"
+                                src="./assets/img/live_weather_dashboard.PNG" alt="the weather dashboard with some previous results shown"></a>
+                        <div class="card-body">
+                            <h3 class="card-title">Live Weather Dashboard</h3>
+                            <p class="card-text">A great site to get weather results for searched cities</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 p-3 m-1" style="width: 18rem;">
+                        <a href="https://eeoerkeedu.github.io/The-Useful-Password-Generator/" target="_blank"><img class="card-img-top col-11"
+                                src="./assets/img/the_useful_password_gen.PNG" alt="the useful password generator returing a password for the user"></a>
+                        <div class="card-body">
+                            <h3 class="card-title">The Useful Password Generator</h3>
+                            <p class="card-text">A light JS page to assist in the generation of random and secure passwords for users.</p>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+
+        <section class="row p-3 about my-1">
+            <img class="col-12 col-lg-6" src="./assets/img/IMG_20190731_102556.jpg" id="about" alt="a picture of Erik in Norway">
+            <div class="container-fluid col-12 col-lg-5">
+                <div class="about-inner">
+                    <h1>About Me</h1>
+                    <p>Hello! If you are looking for an ambitious, attentive, and success motivaed Junior Web Developer look no further. My
+                    name is Erik and I'd love to help you with your next project.</p>
+                    <ul>
+                        <li>A desire to do better than the previous day.</li>
+                        <li>A strong sense of honesty and integrity.</li>
+                        <li>The grit to see things through and always be there for the team.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="row p-3 contact">
+            <div class="container-fluid col-12 col-lg-5">
+                <div class="contact-inner">
+                    <h1 id="contact">Contact Me</h1>
+                    <ul style="list-style: none;">
+                        <li><a href="mailto:eeoerkeedu@gmail.com" target="_blank" alt="Erik's EDU Email link">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/erik-oerke-6a24bb8b/" target="_blank" alt="Erik's LinkedIn link">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/Littletzar" target="_blank" alt="Erik's Twitter link">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
     </main>
 
     <footer>
